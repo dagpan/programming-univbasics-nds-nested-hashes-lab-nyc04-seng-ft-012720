@@ -31,7 +31,11 @@ array1 = [
          ]
 end
 
-def aoh_lookup(aoh, row, key)
+def aoh_lookup(array1 = [{name:  "Don Gately", occupation: "Live-in Staff"}, { name:  "Joelle van Dyne", occupation: "Radio Personality" },
+  { name:  "Pat Monteseian", occupation: "Staff"},
+  { name:  "Kate Gompert", occupation: "None"},
+  { name:  "Bruce Green", occupation: "Fan of Mildred"}], row = 2, key = "name")
+  array1[row][key]
 end
 
 def aoh_update(aoh, row, key, new_value)
